@@ -17,6 +17,8 @@
     static NSString * ID = @"cell";
     id cell = [tableView dequeueReusableCellWithIdentifier:ID];
     
+    
+    
     if (!cell) {
         cell = [[self alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:ID];
     }

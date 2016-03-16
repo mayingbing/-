@@ -23,13 +23,7 @@
     self.navigationItem.title = @"工作经验";
 }
 
-- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath{
-    
-    self.maTextTableViewCell.textView.titleLable.text =self.navigationItem.title;
-    
-    
-    
-}
+
 
 
 @end

@@ -8,15 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-
-
-
-
 @interface MATextView : UIView
 
 @property(nonatomic ,strong) UILabel *titleLable;
 @property(nonatomic ,weak) UILabel *text;
-
 
 
 @end

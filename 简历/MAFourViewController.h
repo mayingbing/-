@@ -6,9 +6,8 @@
 //  Copyright © 2016年 apple. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
-#import "MABaseTableViewController.h"
+#import "MAFirstGroundViewController.h"
 
-@interface MAFourViewController : MABaseTableViewController
+@interface MAFourViewController : MAFirstGroundViewController
 
 @end

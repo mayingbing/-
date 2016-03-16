@@ -7,8 +7,7 @@
 //
 
 #import "MATwoViewController.h"
-#import "MATextTableViewCell.h"
-#import "MATextView.h"
+
 @interface MATwoViewController ()
 
 @end
@@ -17,18 +16,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-
-    
     self.navigationItem.title = @"求职意向";
 }
-- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath{
-    
-    self.maTextTableViewCell.textView.titleLable.text =self.navigationItem.title;
-    
-    
-    
-}
+
 
 
 @end

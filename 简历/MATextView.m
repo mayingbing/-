@@ -8,10 +8,20 @@
 
 #import "MATextView.h"
 
+
+
+
+@interface MATextView ()<UITextViewDelegate>
+
+@property (nonatomic ,strong)UITextView *textView;
+
+
+@end
+
 @implementation MATextView
 
 -(instancetype)init{
-    CGRect frame = CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height-164);
+    CGRect frame = CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height-64);
     if (self = [super initWithFrame:frame]) {
         
         [self setView];
@@ -30,30 +40,31 @@
     _titleLable = titleLable;
     
     [self addSubview:titleLable];
-    titleLable.frame = CGRectMake(([UIScreen mainScreen].bounds.size.width-100)/2,60 , 100, 35);
+    titleLable.frame = CGRectMake(([UIScreen mainScreen].bounds.size.width-100)/2,30 , 100, 35);
     
     
-    
-    UILabel *text = [[UILabel alloc]init];
-    _text = text;
-    _text.numberOfLines = 0;
-    CGFloat textY = CGRectGetMaxY(_titleLable.frame)+10;
-    CGFloat textW = ([UIScreen mainScreen].bounds.size.width-50);
-    
-    CGSize textSize = [_text.text sizeWithFont:[UIFont systemFontOfSize:12] constrainedToSize:CGSizeMake(textW, MAXFLOAT)];
-    
-   // _text.frame = (CGRect){{25,textY},textSize};
-    _text.frame = CGRectMake(25, 50, 200, 100);
-    
-    _text.backgroundColor = [UIColor grayColor];
-    
-    [self addSubview:text];
-    
+    // 添加textView
+    [self setUpTextView];
 
-    
-    
-    
+        
 }
+
+
+
+-(void)setUpTextView{
+    UITextView *textView = [[UITextView alloc] initWithFrame:CGRectMake(25, 50, self.bounds.size.width-50, self.bounds.size.height-260)];
+    _textView = textView;
+    textView.alwaysBounceVertical = YES;
+    textView.delegate = self;
+    
+    textView.backgroundColor = [UIColor grayColor];
+    
+    [self addSubview:textView];
+
+}
+
+
+
 
 
 @end

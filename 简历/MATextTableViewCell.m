@@ -38,7 +38,7 @@
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
         // 添加所有子控件
         [self setUpAllChildView];
-                
+        
     }
 
     return self;

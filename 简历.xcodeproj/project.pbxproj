@@ -7,13 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		18A397671C990153008581C8 /* MABaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A397661C990153008581C8 /* MABaseTableViewController.m */; };
+		188B7B241C999B2B00158C47 /* MAToolBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 188B7B231C999B2B00158C47 /* MAToolBar.m */; };
+		188B7B2A1C99A12E00158C47 /* MAFirstGroundViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 188B7B291C99A12E00158C47 /* MAFirstGroundViewController.m */; };
+		188B7B2E1C99B90F00158C47 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 188B7B2D1C99B90F00158C47 /* UIView+Frame.m */; };
+		188B7B311C99BBB300158C47 /* MAOneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 188B7B301C99BBB300158C47 /* MAOneViewController.m */; };
 		18A3976A1C99048F008581C8 /* MATableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A397691C99048F008581C8 /* MATableViewCell.m */; };
 		18A3976D1C990855008581C8 /* MATextTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A3976C1C990855008581C8 /* MATextTableViewCell.m */; };
 		18A397711C990980008581C8 /* MACellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A397701C990980008581C8 /* MACellView.m */; };
 		18A397751C99329D008581C8 /* MATextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A397741C99329D008581C8 /* MATextView.m */; };
 		18B9C0791C980CC300D9892E /* EFAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B9C0781C980CC300D9892E /* EFAnimationViewController.m */; };
-		18B9C07C1C98160300D9892E /* MAProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B9C07B1C98160300D9892E /* MAProfileViewController.m */; };
 		18B9C0801C981A9B00D9892E /* MATwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B9C07F1C981A9B00D9892E /* MATwoViewController.m */; };
 		18B9C0831C981ABD00D9892E /* MAThreeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B9C0821C981ABD00D9892E /* MAThreeViewController.m */; };
 		18B9C0861C981ACB00D9892E /* MAFourViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B9C0851C981ACB00D9892E /* MAFourViewController.m */; };
@@ -28,8 +30,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		18A397651C990153008581C8 /* MABaseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MABaseTableViewController.h; sourceTree = "<group>"; };
-		18A397661C990153008581C8 /* MABaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MABaseTableViewController.m; sourceTree = "<group>"; };
+		188B7B221C999B2B00158C47 /* MAToolBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAToolBar.h; sourceTree = "<group>"; };
+		188B7B231C999B2B00158C47 /* MAToolBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAToolBar.m; sourceTree = "<group>"; };
+		188B7B281C99A12E00158C47 /* MAFirstGroundViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAFirstGroundViewController.h; sourceTree = "<group>"; };
+		188B7B291C99A12E00158C47 /* MAFirstGroundViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAFirstGroundViewController.m; sourceTree = "<group>"; };
+		188B7B2C1C99B90F00158C47 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
+		188B7B2D1C99B90F00158C47 /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
+		188B7B2F1C99BBB300158C47 /* MAOneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAOneViewController.h; sourceTree = "<group>"; };
+		188B7B301C99BBB300158C47 /* MAOneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAOneViewController.m; sourceTree = "<group>"; };
 		18A397681C99048F008581C8 /* MATableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MATableViewCell.h; sourceTree = "<group>"; };
 		18A397691C99048F008581C8 /* MATableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MATableViewCell.m; sourceTree = "<group>"; };
 		18A3976B1C990855008581C8 /* MATextTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MATextTableViewCell.h; sourceTree = "<group>"; };
@@ -38,10 +46,9 @@
 		18A397701C990980008581C8 /* MACellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MACellView.m; sourceTree = "<group>"; };
 		18A397731C99329D008581C8 /* MATextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MATextView.h; sourceTree = "<group>"; };
 		18A397741C99329D008581C8 /* MATextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MATextView.m; sourceTree = "<group>"; };
+		18A397811C997979008581C8 /* myPch.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = myPch.pch; sourceTree = "<group>"; };
 		18B9C0771C980CBD00D9892E /* EFAnimationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EFAnimationViewController.h; sourceTree = "<group>"; };
 		18B9C0781C980CC300D9892E /* EFAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFAnimationViewController.m; sourceTree = "<group>"; };
-		18B9C07A1C98160300D9892E /* MAProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAProfileViewController.h; sourceTree = "<group>"; };
-		18B9C07B1C98160300D9892E /* MAProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAProfileViewController.m; sourceTree = "<group>"; };
 		18B9C07E1C981A9B00D9892E /* MATwoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MATwoViewController.h; sourceTree = "<group>"; };
 		18B9C07F1C981A9B00D9892E /* MATwoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MATwoViewController.m; sourceTree = "<group>"; };
 		18B9C0811C981ABD00D9892E /* MAThreeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAThreeViewController.h; sourceTree = "<group>"; };
@@ -76,6 +83,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		188B7B2B1C99AE7F00158C47 /* baseVC */ = {
+			isa = PBXGroup;
+			children = (
+				188B7B281C99A12E00158C47 /* MAFirstGroundViewController.h */,
+				188B7B291C99A12E00158C47 /* MAFirstGroundViewController.m */,
+				188B7B221C999B2B00158C47 /* MAToolBar.h */,
+				188B7B231C999B2B00158C47 /* MAToolBar.m */,
+				18A397761C9932A9008581C8 /* cell */,
+			);
+			name = baseVC;
+			sourceTree = "<group>";
+		};
+		188B7B321C99BCD000158C47 /* main */ = {
+			isa = PBXGroup;
+			children = (
+				18F913D01C97ACB60090B543 /* AppDelegate.h */,
+				18F913D11C97ACB60090B543 /* AppDelegate.m */,
+				188B7B2C1C99B90F00158C47 /* UIView+Frame.h */,
+				188B7B2D1C99B90F00158C47 /* UIView+Frame.m */,
+			);
+			name = main;
+			sourceTree = "<group>";
+		};
+		188B7B331C99BCEA00158C47 /* rootVc */ = {
+			isa = PBXGroup;
+			children = (
+				18F913E41C97CB580090B543 /* MABaseViewController.h */,
+				18F913E51C97CB580090B543 /* MABaseViewController.m */,
+				18F913E71C97CB8B0090B543 /* MABaseNavigationController.h */,
+				18F913E81C97CB8B0090B543 /* MABaseNavigationController.m */,
+				18F913EA1C97D70E0090B543 /* MASlipView.h */,
+				18F913EB1C97D70E0090B543 /* MASlipView.m */,
+			);
+			name = rootVc;
+			sourceTree = "<group>";
+		};
 		18A3976E1C99095B008581C8 /* view */ = {
 			isa = PBXGroup;
 			children = (
@@ -110,10 +153,8 @@
 		18B9C07D1C981A7900D9892E /* childenView */ = {
 			isa = PBXGroup;
 			children = (
-				18A397651C990153008581C8 /* MABaseTableViewController.h */,
-				18A397661C990153008581C8 /* MABaseTableViewController.m */,
-				18B9C07A1C98160300D9892E /* MAProfileViewController.h */,
-				18B9C07B1C98160300D9892E /* MAProfileViewController.m */,
+				188B7B2F1C99BBB300158C47 /* MAOneViewController.h */,
+				188B7B301C99BBB300158C47 /* MAOneViewController.m */,
 				18B9C07E1C981A9B00D9892E /* MATwoViewController.h */,
 				18B9C07F1C981A9B00D9892E /* MATwoViewController.m */,
 				18B9C0811C981ABD00D9892E /* MAThreeViewController.h */,
@@ -122,7 +163,6 @@
 				18B9C0851C981ACB00D9892E /* MAFourViewController.m */,
 				18B9C0871C981AE800D9892E /* MAFiveViewController.h */,
 				18B9C0881C981AE800D9892E /* MAFiveViewController.m */,
-				18A397761C9932A9008581C8 /* cell */,
 			);
 			name = childenView;
 			sourceTree = "<group>";
@@ -146,20 +186,16 @@
 		18F913CC1C97ACB60090B543 /* 简历 */ = {
 			isa = PBXGroup;
 			children = (
-				18F913D01C97ACB60090B543 /* AppDelegate.h */,
-				18F913D11C97ACB60090B543 /* AppDelegate.m */,
-				18F913E41C97CB580090B543 /* MABaseViewController.h */,
-				18F913E51C97CB580090B543 /* MABaseViewController.m */,
-				18F913E71C97CB8B0090B543 /* MABaseNavigationController.h */,
-				18F913E81C97CB8B0090B543 /* MABaseNavigationController.m */,
-				18F913EA1C97D70E0090B543 /* MASlipView.h */,
-				18F913EB1C97D70E0090B543 /* MASlipView.m */,
+				188B7B321C99BCD000158C47 /* main */,
+				188B7B331C99BCEA00158C47 /* rootVc */,
 				18B9C0771C980CBD00D9892E /* EFAnimationViewController.h */,
 				18B9C0781C980CC300D9892E /* EFAnimationViewController.m */,
+				188B7B2B1C99AE7F00158C47 /* baseVC */,
 				18B9C07D1C981A7900D9892E /* childenView */,
 				18F913D91C97ACB60090B543 /* Assets.xcassets */,
 				18F913DB1C97ACB60090B543 /* LaunchScreen.storyboard */,
 				18F913DE1C97ACB60090B543 /* Info.plist */,
+				18A397811C997979008581C8 /* myPch.pch */,
 				18F913CD1C97ACB60090B543 /* Supporting Files */,
 			);
 			path = "简历";
@@ -245,7 +281,7 @@
 			files = (
 				18F913E91C97CB8B0090B543 /* MABaseNavigationController.m in Sources */,
 				18F913E61C97CB580090B543 /* MABaseViewController.m in Sources */,
-				18A397671C990153008581C8 /* MABaseTableViewController.m in Sources */,
+				188B7B2A1C99A12E00158C47 /* MAFirstGroundViewController.m in Sources */,
 				18B9C0861C981ACB00D9892E /* MAFourViewController.m in Sources */,
 				18B9C0891C981AE800D9892E /* MAFiveViewController.m in Sources */,
 				18A397751C99329D008581C8 /* MATextView.m in Sources */,
@@ -255,10 +291,12 @@
 				18F913EC1C97D70E0090B543 /* MASlipView.m in Sources */,
 				18F913D21C97ACB60090B543 /* AppDelegate.m in Sources */,
 				18A3976A1C99048F008581C8 /* MATableViewCell.m in Sources */,
-				18B9C07C1C98160300D9892E /* MAProfileViewController.m in Sources */,
+				188B7B2E1C99B90F00158C47 /* UIView+Frame.m in Sources */,
+				188B7B311C99BBB300158C47 /* MAOneViewController.m in Sources */,
 				18F913CF1C97ACB60090B543 /* main.m in Sources */,
 				18B9C0831C981ABD00D9892E /* MAThreeViewController.m in Sources */,
 				18B9C0801C981A9B00D9892E /* MATwoViewController.m in Sources */,
+				188B7B241C999B2B00158C47 /* MAToolBar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,7 +398,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "/Users/apple/Desktop/实战项目/简历/简历/myPch.pch";
 				INFOPLIST_FILE = "简历/Info.plist";
+				INFOPLIST_PREFIX_HEADER = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "cn.it.--";
@@ -372,7 +413,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "/Users/apple/Desktop/实战项目/简历/简历/myPch.pch";
 				INFOPLIST_FILE = "简历/Info.plist";
+				INFOPLIST_PREFIX_HEADER = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "cn.it.--";

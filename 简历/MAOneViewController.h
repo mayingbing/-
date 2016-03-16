@@ -1,13 +1,13 @@
 //
-//  MATwoViewController.h
+//  MAOneViewController.h
 //  简历
 //
-//  Created by apple on 16/3/15.
+//  Created by apple on 16/3/17.
 //  Copyright © 2016年 apple. All rights reserved.
 //
 
 #import "MAFirstGroundViewController.h"
 
-@interface MATwoViewController : MAFirstGroundViewController
+@interface MAOneViewController : MAFirstGroundViewController
 
 @end

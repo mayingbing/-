@@ -1,0 +1,14 @@
+//
+//  myPch.pch
+//  简历
+//
+//  Created by apple on 16/3/16.
+//  Copyright © 2016年 apple. All rights reserved.
+//
+
+#ifndef myPch_pch
+#define myPch_pch
+
+#import "UIView+Frame.h"
+
+#endif /* myPch_pch */

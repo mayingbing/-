@@ -7,11 +7,13 @@
 //
 
 #import "EFAnimationViewController.h"
-#import "MAProfileViewController.h"
+#import "MAOneViewController.h"
 #import "MATwoViewController.h"
 #import "MAThreeViewController.h"
 #import "MAFourViewController.h"
 #import "MAFiveViewController.h"
+
+#import "MAFirstGroundViewController.h"
 
 #define RADIUS 100.0
 #define PHOTONUM 5
@@ -29,7 +31,7 @@ NSInteger array [PHOTONUM][PHOTONUM] = {
 @interface EFAnimationViewController ()<EFItemViewDelegate>
 
 @property (nonatomic, assign) NSInteger currentTag;
-@property (nonatomic ,strong) MAProfileViewController *profileVc;
+@property (nonatomic ,strong) MAOneViewController *one;
 @property (nonatomic ,strong) MATwoViewController *two;
 @property (nonatomic ,strong) MAThreeViewController *three;
 @property (nonatomic ,strong) MAFourViewController *four;
@@ -48,8 +50,8 @@ CATransform3D rotationTransform1[PHOTONUM];
     
     [super viewDidLoad];
     
-    MAProfileViewController *profileVc = [[MAProfileViewController alloc]init];
-    _profileVc = profileVc;
+    MAOneViewController *one = [[MAOneViewController alloc]init];
+    _one = one;
     MATwoViewController *two = [[MATwoViewController alloc]init];
     _two = two;
     MAThreeViewController *three = [[MAThreeViewController alloc]init];
@@ -58,6 +60,9 @@ CATransform3D rotationTransform1[PHOTONUM];
     _four = four;
     MAFiveViewController *five = [[MAFiveViewController alloc]init];
     _five = five;
+    
+    
+    
     
     [self configViews];
 }
@@ -133,10 +138,10 @@ CATransform3D rotationTransform1[PHOTONUM];
     
     
     switch (index) {
-        case 1000:
-            [self.navigationController pushViewController:_profileVc animated:YES];
+        case 1000:{
+            [self.navigationController pushViewController:_one animated:YES];
             
-            break;
+        }break;
         case 1001:
             [self.navigationController pushViewController:_two animated:YES];
             

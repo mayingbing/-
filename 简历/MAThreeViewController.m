@@ -22,12 +22,6 @@
     
     self.navigationItem.title = @"知识状况";
 }
-- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath{
-    
-    self.maTextTableViewCell.textView.titleLable.text =self.navigationItem.title;
-    
-    
-    
-}
+
 
 @end
