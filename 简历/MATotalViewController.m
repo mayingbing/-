@@ -23,8 +23,21 @@
     [super viewDidLoad];
     self.navigationItem.title = @"项目简介";
     
-    [self.toolBar.btn addTarget:self action:@selector(save) forControlEvents:UIControlEventTouchUpInside];
+    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+   
+    UIBarButtonItem *barBtnItem = [[UIBarButtonItem alloc]initWithCustomView:btn];
+    self.navigationItem.rightBarButtonItem = barBtnItem;
     
+    [btn setTitle:@"myGithub" forState:UIControlStateNormal];
+    [btn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    
+    
+    
+    
+    
+    
+    [self.toolBar.btn addTarget:self action:@selector(save) forControlEvents:UIControlEventTouchUpInside];
+
 }
 
 -(void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath{
