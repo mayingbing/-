@@ -14,8 +14,6 @@
 
 @interface MAFirstGroundViewController ()<UITableViewDelegate,UITableViewDataSource>
 
-
-
 @end
 
 @implementation MAFirstGroundViewController
@@ -44,10 +42,7 @@
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(moveToolBar:) name:UIKeyboardWillChangeFrameNotification object:nil];
     
-    
 }
-
-
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     

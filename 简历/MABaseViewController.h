@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MABaseViewController : UIViewController
+@interface MABaseViewController :UIViewController
 
 @end
