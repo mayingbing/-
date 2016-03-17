@@ -1,29 +1,28 @@
 //
-//  MAFiveViewController.m
+//  MAOneViewController.m
 //  简历
 //
-//  Created by apple on 16/3/15.
+//  Created by apple on 16/3/17.
 //  Copyright © 2016年 apple. All rights reserved.
 //
 
-#import "MAFiveViewController.h"
+#import "MATotalViewController.h"
 #import "MATextTableViewCell.h"
 #import "MATextView.h"
 #import "MAToolBar.h"
 
-#define CZAccountFileName [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)[0] stringByAppendingPathComponent:@"judge.data"]
-@interface MAFiveViewController ()
+#define CZAccountFileName [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)[0] stringByAppendingPathComponent:@"total.data"]
+
+@interface MATotalViewController ()<UITableViewDelegate>
 
 @end
 
-@implementation MAFiveViewController
+@implementation MATotalViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.navigationItem.title = @"项目简介";
     
-
-    
-    self.navigationItem.title = @"自我评价";
     [self.toolBar.btn addTarget:self action:@selector(save) forControlEvents:UIControlEventTouchUpInside];
     
 }
@@ -40,7 +39,7 @@
     
     NSString *currentText = self.maTextTableViewCell.textView.textLable.text;
     
-    NSString *saveText =[NSString stringWithFormat:@"%@%@",currentText,Newcontent];
+    NSString *saveText = [NSString stringWithFormat:@"%@%@",currentText,Newcontent];
     
     
     [NSKeyedArchiver archiveRootObject:saveText toFile:CZAccountFileName];
@@ -52,4 +51,6 @@
     
     [self.tableView reloadData];
 }
+
+
 @end

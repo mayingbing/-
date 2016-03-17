@@ -8,9 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-
+@class MATextTableViewCell;
+@class MAToolBar;
 @interface MAFirstGroundViewController : UIViewController
 
-@property (nonatomic,strong) UITableView *tableView;
-
+@property (nonatomic ,strong)MAToolBar *toolBar;
+@property (nonatomic ,strong)MATextTableViewCell *maTextTableViewCell;
+@property(nonatomic ,strong)UITableView *tableView;
 @end

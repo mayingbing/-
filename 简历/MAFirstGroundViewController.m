@@ -37,9 +37,14 @@
     self.tableView.dataSource = self;
     [self.view addSubview:self.tableView];
     self.tableView.backgroundColor = [UIColor grayColor];
-    
+
     // 添加工具条
     [self setUpToolBar];
+    
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(moveToolBar:) name:UIKeyboardWillChangeFrameNotification object:nil];
+    
+    
 }
 
 
@@ -56,36 +61,67 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     if (indexPath.section==0) {
-        MATableViewCell *cell = [MATableViewCell cellWithTableView:tableView ];
+        MATableViewCell *maTableViewCell = [MATableViewCell cellWithTableView:tableView ];
         
         
-        return cell;
+        return maTableViewCell;
     }else{
-        MATextTableViewCell *cell = [MATextTableViewCell cellWithTableView:tableView];
+        MATextTableViewCell *maTextTableViewCell = [MATextTableViewCell cellWithTableView:tableView];
         
-        return cell;
+        self.maTextTableViewCell = maTextTableViewCell;
+        
+        return maTextTableViewCell;
     }
 }
+
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     
     if (indexPath.section==0){
         return 100;
     }else{
-        return [UIScreen mainScreen].bounds.size.height-64;
+        
+        return [UIScreen mainScreen].bounds.size.height-214;
     }
 }
-- (void)setUpToolBar
+
+-(void)setUpToolBar
 {
     MAToolBar *toolBar = [[MAToolBar alloc] init];
     
-    
+    _toolBar = toolBar;
     CGFloat toolBarW = self.view.width;
-    CGFloat toolBarH = 64;
+    CGFloat toolBarH = 54;
     CGFloat toolBarY = self.view.height - toolBarH;
     toolBar.frame = CGRectMake(0, toolBarY, toolBarW, toolBarH);
     toolBar.backgroundColor = [UIColor whiteColor];
     
     [self.view addSubview:toolBar];
+    
+    
 }
+-(void)moveToolBar:(NSNotification *)note{
+    // 获取键盘弹出的动画时间
+    CGFloat durtion = [note.userInfo[UIKeyboardAnimationDurationUserInfoKey] floatValue];
+    
+    // 获取键盘的frame
+    CGRect frame = [note.userInfo[UIKeyboardFrameEndUserInfoKey] CGRectValue];
+    
+    if (frame.origin.y == self.view.height) { // 没有弹出键盘
+        [UIView animateWithDuration:durtion animations:^{
+            
+            _toolBar.transform =  CGAffineTransformIdentity;
+            _tableView.transform =CGAffineTransformIdentity;
+        }];
+    }else{ // 弹出键盘
+        // 工具条往上移动258
+        [UIView animateWithDuration:durtion animations:^{
+            
+            _toolBar.transform = CGAffineTransformMakeTranslation(0, -frame.size.height);
+            _tableView.transform =CGAffineTransformMakeTranslation(0, -120);
+
+        }];
+    }
+}
+
 
 @end

@@ -12,6 +12,7 @@
 #import "MAThreeViewController.h"
 #import "MAFourViewController.h"
 #import "MAFiveViewController.h"
+#import "MATextTableViewCell.h"
 
 #import "MAFirstGroundViewController.h"
 
@@ -52,6 +53,7 @@ CATransform3D rotationTransform1[PHOTONUM];
     
     MAOneViewController *one = [[MAOneViewController alloc]init];
     _one = one;
+    
     MATwoViewController *two = [[MATwoViewController alloc]init];
     _two = two;
     MAThreeViewController *three = [[MAThreeViewController alloc]init];
@@ -84,6 +86,8 @@ CATransform3D rotationTransform1[PHOTONUM];
         CGFloat tmpx =	centerx - RADIUS*sin(2.0*M_PI *i/PHOTONUM);
         EFItemView *view = [[EFItemView alloc]initWithNormalImage:dataArray[i] highlightedImage:nil tag:TAGSTART+i title:textArr[i]];
         view.titleLabel.font = [UIFont systemFontOfSize:15];
+        
+        
         [view sizeToFit];
         
         

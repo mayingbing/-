@@ -9,6 +9,10 @@
 #import "MATableViewCell.h"
 #import "MACellView.h"
 
+@interface MATableViewCell ()
+
+@end
+
 @implementation MATableViewCell
 
 
@@ -30,11 +34,8 @@
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
         // 添加所有子控件
         [self setUpAllChildView];
-       
 
     }
-    
-    
     return self;
 }
 

@@ -1,5 +1,5 @@
 //
-//  MAOneViewController.h
+//  MAJianliViewController.h
 //  简历
 //
 //  Created by apple on 16/3/17.
@@ -8,8 +8,6 @@
 
 #import "MAFirstGroundViewController.h"
 
-@interface MAOneViewController : MAFirstGroundViewController
-
-
+@interface MAJianliViewController : MAFirstGroundViewController
 
 @end

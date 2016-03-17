@@ -9,11 +9,7 @@
 #import <UIKit/UIKit.h>
 @class MATextView;
 
-
-
 @interface MATextTableViewCell : UITableViewCell
-
-
 
 +(instancetype)cellWithTableView:(UITableView *)tableView;
 

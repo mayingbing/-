@@ -11,7 +11,7 @@
 @interface MATextView : UIView
 
 @property(nonatomic ,strong) UILabel *titleLable;
-@property(nonatomic ,weak) UILabel *text;
+@property(nonatomic ,weak) UITextView *textLable;
 
 
 @end

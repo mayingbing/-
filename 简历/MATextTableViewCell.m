@@ -8,18 +8,15 @@
 
 #import "MATextTableViewCell.h"
 #import "MATextView.h"
+#import "MAOneViewController.h"
+
+@interface MATextTableViewCell ()
+
+@end
 
 @implementation MATextTableViewCell
 
-- (void)awakeFromNib {
-    // Initialization code
-}
 
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
-    [super setSelected:selected animated:animated];
-
-    // Configure the view for the selected state
-}
 +(instancetype)cellWithTableView:(UITableView *)tableView{
     
     static NSString * ID = @"text";
@@ -28,8 +25,6 @@
     if (cell==nil) {
         cell = [[self alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:ID];
     }
-    
-    
     return cell;
 }
 
@@ -49,8 +44,9 @@
     MATextView *textView = [[MATextView alloc]init];
     _textView = textView;
     
+    
+    
     [self addSubview:textView];
-    
-    
 }
+
 @end

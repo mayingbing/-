@@ -10,4 +10,6 @@
 
 @interface MAToolBar : UIView
 
+@property (nonatomic ,strong)UIButton *btn;
+@property (nonatomic ,strong)UITextView *textView;
 @end

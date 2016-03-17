@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		186818AC1C9A8BBB00C10580 /* MATotalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 186818AB1C9A8BBB00C10580 /* MATotalViewController.m */; };
+		186818AF1C9A8BC900C10580 /* MASinaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 186818AE1C9A8BC900C10580 /* MASinaViewController.m */; };
+		186818B21C9A8BD700C10580 /* MA108dayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 186818B11C9A8BD700C10580 /* MA108dayViewController.m */; };
+		186818B51C9A8BE300C10580 /* MAJianliViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 186818B41C9A8BE300C10580 /* MAJianliViewController.m */; };
 		188B7B241C999B2B00158C47 /* MAToolBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 188B7B231C999B2B00158C47 /* MAToolBar.m */; };
 		188B7B2A1C99A12E00158C47 /* MAFirstGroundViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 188B7B291C99A12E00158C47 /* MAFirstGroundViewController.m */; };
 		188B7B2E1C99B90F00158C47 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 188B7B2D1C99B90F00158C47 /* UIView+Frame.m */; };
@@ -30,6 +34,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		186818AA1C9A8BBB00C10580 /* MATotalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MATotalViewController.h; sourceTree = "<group>"; };
+		186818AB1C9A8BBB00C10580 /* MATotalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MATotalViewController.m; sourceTree = "<group>"; };
+		186818AD1C9A8BC900C10580 /* MASinaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASinaViewController.h; sourceTree = "<group>"; };
+		186818AE1C9A8BC900C10580 /* MASinaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASinaViewController.m; sourceTree = "<group>"; };
+		186818B01C9A8BD700C10580 /* MA108dayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MA108dayViewController.h; sourceTree = "<group>"; };
+		186818B11C9A8BD700C10580 /* MA108dayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MA108dayViewController.m; sourceTree = "<group>"; };
+		186818B31C9A8BE300C10580 /* MAJianliViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAJianliViewController.h; sourceTree = "<group>"; };
+		186818B41C9A8BE300C10580 /* MAJianliViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAJianliViewController.m; sourceTree = "<group>"; };
 		188B7B221C999B2B00158C47 /* MAToolBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAToolBar.h; sourceTree = "<group>"; };
 		188B7B231C999B2B00158C47 /* MAToolBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAToolBar.m; sourceTree = "<group>"; };
 		188B7B281C99A12E00158C47 /* MAFirstGroundViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAFirstGroundViewController.h; sourceTree = "<group>"; };
@@ -83,6 +95,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		186818A91C9A8B5C00C10580 /* 项目简介 */ = {
+			isa = PBXGroup;
+			children = (
+				186818AA1C9A8BBB00C10580 /* MATotalViewController.h */,
+				186818AB1C9A8BBB00C10580 /* MATotalViewController.m */,
+				186818AD1C9A8BC900C10580 /* MASinaViewController.h */,
+				186818AE1C9A8BC900C10580 /* MASinaViewController.m */,
+				186818B01C9A8BD700C10580 /* MA108dayViewController.h */,
+				186818B11C9A8BD700C10580 /* MA108dayViewController.m */,
+				186818B31C9A8BE300C10580 /* MAJianliViewController.h */,
+				186818B41C9A8BE300C10580 /* MAJianliViewController.m */,
+			);
+			name = "项目简介";
+			sourceTree = "<group>";
+		};
 		188B7B2B1C99AE7F00158C47 /* baseVC */ = {
 			isa = PBXGroup;
 			children = (
@@ -115,6 +142,7 @@
 				18F913E81C97CB8B0090B543 /* MABaseNavigationController.m */,
 				18F913EA1C97D70E0090B543 /* MASlipView.h */,
 				18F913EB1C97D70E0090B543 /* MASlipView.m */,
+				186818A91C9A8B5C00C10580 /* 项目简介 */,
 			);
 			name = rootVc;
 			sourceTree = "<group>";
@@ -279,6 +307,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				186818B21C9A8BD700C10580 /* MA108dayViewController.m in Sources */,
 				18F913E91C97CB8B0090B543 /* MABaseNavigationController.m in Sources */,
 				18F913E61C97CB580090B543 /* MABaseViewController.m in Sources */,
 				188B7B2A1C99A12E00158C47 /* MAFirstGroundViewController.m in Sources */,
@@ -286,11 +315,14 @@
 				18B9C0891C981AE800D9892E /* MAFiveViewController.m in Sources */,
 				18A397751C99329D008581C8 /* MATextView.m in Sources */,
 				18A397711C990980008581C8 /* MACellView.m in Sources */,
+				186818AC1C9A8BBB00C10580 /* MATotalViewController.m in Sources */,
 				18B9C0791C980CC300D9892E /* EFAnimationViewController.m in Sources */,
 				18A3976D1C990855008581C8 /* MATextTableViewCell.m in Sources */,
 				18F913EC1C97D70E0090B543 /* MASlipView.m in Sources */,
 				18F913D21C97ACB60090B543 /* AppDelegate.m in Sources */,
 				18A3976A1C99048F008581C8 /* MATableViewCell.m in Sources */,
+				186818AF1C9A8BC900C10580 /* MASinaViewController.m in Sources */,
+				186818B51C9A8BE300C10580 /* MAJianliViewController.m in Sources */,
 				188B7B2E1C99B90F00158C47 /* UIView+Frame.m in Sources */,
 				188B7B311C99BBB300158C47 /* MAOneViewController.m in Sources */,
 				18F913CF1C97ACB60090B543 /* main.m in Sources */,

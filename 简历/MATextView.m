@@ -7,14 +7,10 @@
 //
 
 #import "MATextView.h"
-
-
+#import "MAOneViewController.h"
 
 
 @interface MATextView ()<UITextViewDelegate>
-
-@property (nonatomic ,strong)UITextView *textView;
-
 
 @end
 
@@ -33,38 +29,42 @@
     
     UIImageView *imgView = [[UIImageView alloc]initWithFrame:self.bounds];
     [self addSubview:imgView];
-    imgView.image = [UIImage imageNamed:@"textbg"];
+    imgView.image = [UIImage imageNamed:@"bg"];
     
     
     UILabel *titleLable = [[UILabel alloc]init];
     _titleLable = titleLable;
     
     [self addSubview:titleLable];
-    titleLable.frame = CGRectMake(([UIScreen mainScreen].bounds.size.width-100)/2,30 , 100, 35);
+    titleLable.frame = CGRectMake(([UIScreen mainScreen].bounds.size.width-100)/2,15 , 100, 35);
     
     
     // 添加textView
     [self setUpTextView];
-
-        
+    
+    
+    
 }
-
 
 
 -(void)setUpTextView{
-    UITextView *textView = [[UITextView alloc] initWithFrame:CGRectMake(25, 50, self.bounds.size.width-50, self.bounds.size.height-260)];
-    _textView = textView;
-    textView.alwaysBounceVertical = YES;
-    textView.delegate = self;
+    UITextView *textLable = [[UITextView alloc] initWithFrame:CGRectMake(25, 50, self.bounds.size.width-50, self.bounds.size.height-230)];
     
-    textView.backgroundColor = [UIColor grayColor];
-    
-    [self addSubview:textView];
+
+    textLable.layer.cornerRadius = 5;
+    textLable.layer.masksToBounds = YES;
+    textLable.backgroundColor = [UIColor lightGrayColor];
+    textLable.font = [UIFont systemFontOfSize:18];
+    textLable.textColor = [UIColor brownColor];
+    _textLable = textLable;
+    [self addSubview:textLable];
 
 }
 
-
-
-
+-(void)MAOneViewControllerSaveDataWithContent:(NSString *)content{
+    
+    self.textLable.text = content;
+    
+}
 
 @end
